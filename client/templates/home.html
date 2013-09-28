@@ -1,0 +1,22 @@
+<template name="home-layout">
+	{{yield 'top_bar'}}
+	{{{yield}}}
+</template>
+
+<template name="top_bar">
+	<nav class="top-bar">
+		<ul class="title-area">
+			<li class="name"><h1><a href="{{urlFor 'login'}}">Wizer</a></h1></li>
+		</ul>
+		<section class="top-bar-section">
+			<ul class="right">
+				{{#if currentUser}}
+					<li><a href="{{urlFor 'teacher_profile'}}">Welcome, {{currentUser.profile.last_name}} {{currentUser.profile.first_name}}</a></li>
+					<li><button class="logout-button">Logout</button></li>
+				{{else}}
+					<li><a href="">Welcome, guest</a></li>
+				{{/if}}
+			</ul>
+		</section>
+	</nav>
+</template>

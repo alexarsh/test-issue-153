@@ -1,0 +1,11 @@
+@mixin words-mold-arrow ($direction: left) {
+	position: absolute;
+	top: 25%;
+	color: lightblue;
+	text-decoration: none;
+	@if $direction == left {
+		left: 20%;
+	} @else {
+		right: 20%;
+	}
+}

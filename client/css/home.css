@@ -1,0 +1,62 @@
+/* line 1, ../sass/home.scss */
+.home {
+  width: 100%;
+  height: 102.5%;
+  position: relative;
+  text-align: center;
+}
+/* line 7, ../sass/home.scss */
+.home .container .left-box-image {
+  width: 30rem;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 6.9%;
+}
+/* line 13, ../sass/home.scss */
+.home .container .right-container {
+  width: 30rem;
+  display: inline-block;
+  vertical-align: middle;
+}
+/* line 17, ../sass/home.scss */
+.home .container .right-container .teacher-register-form, .home .container .right-container .student-register-form {
+  display: none;
+  height: 22rem;
+}
+/* line 20, ../sass/home.scss */
+.home .container .right-container .teacher-register-form .name_prefix, .home .container .right-container .student-register-form .name_prefix {
+  margin-bottom: 1rem;
+}
+/* line 23, ../sass/home.scss */
+.home .container .right-container .teacher-register-form #teacher-policy, .home .container .right-container .teacher-register-form #student-policy, .home .container .right-container .student-register-form #teacher-policy, .home .container .right-container .student-register-form #student-policy {
+  float: left;
+}
+/* line 26, ../sass/home.scss */
+.home .container .right-container .teacher-register-form label, .home .container .right-container .student-register-form label {
+  float: left;
+  margin-left: 0.5rem;
+}
+/* line 30, ../sass/home.scss */
+.home .container .right-container .teacher-register-form small, .home .container .right-container .student-register-form small {
+  clear: both;
+}
+/* line 33, ../sass/home.scss */
+.home .container .right-container .teacher-register-form .already-registered, .home .container .right-container .student-register-form .already-registered {
+  margin-top: 1rem;
+}
+/* line 37, ../sass/home.scss */
+.home .container .right-container .sign-up-text {
+  border-top: 1px solid #cccccc;
+  padding: 1rem 0;
+  margin-top: 1rem;
+}
+/* line 42, ../sass/home.scss */
+.home .container .right-container.about-container {
+  width: 53rem;
+}
+/* line 45, ../sass/home.scss */
+.home .container .right-container .about {
+  text-align: left;
+  margin-left: 5%;
+  line-height: 1.2;
+}

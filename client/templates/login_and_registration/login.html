@@ -1,0 +1,38 @@
+<template name="login">
+	{{! {{loginButtons}}
+	<div class="home">
+		<div class="container">
+			<div class="right-container">
+				<form name="login-form" class="login-form" method="POST">
+				    <div class="row">
+						<div class="large-12 columns">
+							{{#if errors.login}}
+								<small class="error">{{errors.login}}</small>
+							{{/if}}
+							<input name="login_username" type="text" placeholder="Email or username">
+							{{#if errors.login_username}}
+								<small class="error">{{errors.login_username}}</small>
+							{{/if}}
+						</div>
+				    </div>
+					<div class="row">
+						<div class="large-12 columns">
+							<input name="login_password" type="password" placeholder="Password">
+							{{#if errors.login_password}}
+								<small class="error">{{errors.login_password}}</small>
+							{{/if}}
+						</div>
+				    </div>
+					<div class="row">
+						<div class="large-12 columns">
+							<input type="text" placeholder="Classroom code (Optional)">
+						</div>
+				    </div>
+					<button type="submit">Login</button>
+					<div class="sign-up-text">Sign up now, it's free!</div>
+					<button class="red teacher-registration" type="button">I'm a teacher</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</template>

@@ -1,0 +1,52 @@
+.home {
+	width: 100%;
+	height: 102.5%;
+	position: relative;
+	text-align: center;
+	.container {
+		.left-box-image {
+			width: 30rem;
+			display: inline-block;
+			vertical-align: top;
+			margin-top: 6.9%;
+		}
+		.right-container {
+			width: 30rem;
+			display: inline-block;
+			vertical-align: middle;
+			.teacher-register-form, .student-register-form {
+				display: none;
+				height: 22rem;
+				.name_prefix {
+					margin-bottom: 1rem;
+				}
+				#teacher-policy, #student-policy {
+					float: left;
+				}
+				label {
+					float: left;
+					margin-left: 0.5rem;
+				}
+				small {
+					clear: both;
+				}
+				.already-registered {
+					margin-top: 1rem;
+				}
+			}
+			.sign-up-text {
+				border-top: 1px solid #ccc;
+				padding: 1rem 0 ;
+				margin-top: 1rem;
+			}
+			&.about-container {
+				width: 53rem;
+			}
+			.about {
+				text-align: left;
+				margin-left: 5%;
+				line-height: 1.2;
+			}
+		}
+	}
+}

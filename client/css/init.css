@@ -1,0 +1,70 @@
+/* line 2, ../sass/partials/_colors.scss */
+.green {
+  background-color: #00b300;
+  border-color: #00b300;
+}
+/* line 5, ../sass/partials/_colors.scss */
+.green:hover {
+  background-color: green;
+  border-color: green;
+}
+
+/* line 11, ../sass/partials/_colors.scss */
+.red {
+  background-color: #ff6a33;
+  border-color: #ff6a33;
+}
+/* line 14, ../sass/partials/_colors.scss */
+.red:hover {
+  background-color: orangered;
+  border-color: orangered;
+}
+
+/* line 3, ../sass/init.scss */
+html {
+  height: 100%;
+}
+
+/* line 7, ../sass/init.scss */
+body {
+  width: 100%;
+  height: 91.5%;
+  padding: 0;
+  margin: 0;
+  background: none;
+}
+
+/* line 15, ../sass/init.scss */
+.top-bar {
+  margin-bottom: 0;
+  background-color: lightblue;
+}
+/* line 20, ../sass/init.scss */
+.top-bar .top-bar-section li a:not(.button) {
+  background-color: lightblue;
+}
+/* line 23, ../sass/init.scss */
+.top-bar .top-bar-section li a:not(.button):hover {
+  color: black;
+}
+/* line 26, ../sass/init.scss */
+.top-bar .top-bar-section li .logout-button {
+  height: 45px;
+}
+/* line 30, ../sass/init.scss */
+.top-bar .top-bar-section ul {
+  background: none;
+}
+/* line 32, ../sass/init.scss */
+.top-bar .top-bar-section ul > .divider {
+  border-color: white;
+}
+/* line 37, ../sass/init.scss */
+.top-bar a, .top-bar a:hover {
+  color: black;
+}
+
+/* line 42, ../sass/init.scss */
+.tabs .active > button {
+  background-color: #2284a1;
+}

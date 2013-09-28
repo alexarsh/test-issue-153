@@ -1,0 +1,22 @@
+//buttons classes
+.green {
+	background-color: lighten(green, 10%);
+	border-color: lighten(green, 10%);
+	&:hover {
+		background-color: green;
+		border-color: green;
+	}
+}
+
+.red {
+	background-color: lighten(orangered, 10%);
+	border-color: lighten(orangered, 10%);
+	&:hover {
+		background-color: orangered;
+		border-color: orangered;
+	}
+}
+
+//variables
+$nav-bar-color: lightblue;
+$active-tab: #2284a1;

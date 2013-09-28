@@ -1,0 +1,12 @@
+{
+  "packages": {
+    "mini-pages": {},
+    "font-awesome": {},
+    "logger": {},
+    "iron-router": {},
+    "foundation": {},
+    "spin": {},
+    "router": {},
+    "z-mongo-admin": {}
+  }
+}

@@ -1,0 +1,25 @@
+@import "partials/colors";
+
+.teacher_profile {
+	margin-top: 3%;
+	margin-left: 3%;
+	section button > a {
+		color: #ffffff;
+	}
+	.teacher_profile_update {
+		margin-bottom: 3%;
+		.row {
+			margin: 0;
+			.columns {
+				padding: 0;
+				.name_prefix {
+					margin: 1rem 0;
+				}
+			}
+		}
+	}
+}
+
+.students_list {
+	height: 100%;
+}

@@ -1,0 +1,44 @@
+@import "partials/colors";
+
+html {
+    height: 100%;
+}
+
+body {
+	width: 100%;
+    height: 91.5%;
+    padding: 0;
+    margin: 0;
+	background: none;
+}
+
+.top-bar {
+	margin-bottom: 0;
+	background-color: $nav-bar-color;
+	.top-bar-section {
+		li {
+			a:not(.button) {
+				background-color:$nav-bar-color;
+			}
+			a:not(.button):hover {
+				color: black;
+			}
+			.logout-button {
+				height: 45px;
+			}
+		}
+		ul {
+			background: none;
+			&>.divider {
+				border-color: white;
+			}
+		}
+	}
+	a, a:hover {
+		color: black;
+	}
+}
+
+.tabs .active > button {
+	background-color: $active-tab;
+}

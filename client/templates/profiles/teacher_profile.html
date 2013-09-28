@@ -1,0 +1,152 @@
+<template name="teacher_profile">
+	<div class="teacher_profile tabs" data-section>
+		<section class="active">
+			<button data-section-title><a href="#panel1">Profile</a></button>
+			<div class="content" data-section-content>
+				{{>teacher_profile_update}}
+			</div>
+		</section>
+		<section>
+			<button data-section-title><a href="#panel2">Students</a></button>
+			<div class="content students_list" data-section-content>
+				{{>students_list}}
+			</div>
+		</section>
+		<section>
+			<button data-section-title><a href="#panel3">Classroom</a></button>
+			<div class="content" data-section-content>
+				<p>Content of section 3.</p>
+			</div>
+		</section>
+	</div>
+</template>
+
+<template name="teacher_profile_update">
+	<form name="teacher_profile_update" class="teacher_profile_update" method="POST">
+		<div class="row">
+			<div class="large-4 columns">
+				{{#if errors.general}}
+					<small class="error">{{errors.general}}</small>
+				{{/if}}
+			</div>
+		</div>
+		<div class="row">
+			<div class="large-4 columns">
+				<select class="name_prefix" name="name_prefix">
+					<option value="mrs" {{#if currentUser.profile.name_prefix}}selected{{/if}}>Mrs.</option>
+					<option value="ms" {{#if currentUser.profile.name_prefix}}selected{{/if}}>Ms.</option>
+					<option value="mr" {{#if currentUser.profile.name_prefix}}selected{{/if}}>Mr.</option>
+				</select>
+			</div>
+		</div>
+		<div class="row">
+			<div class="large-4 columns">
+				<input name="first_name" type="text" placeholder="First name"
+					{{#if currentUser.profile.first_name}}
+						value="{{currentUser.profile.first_name}}"
+					{{/if}}>
+				{{#if errors.first_name}}
+					<small class="error">{{errors.first_name}}</small>
+				{{/if}}
+			</div>
+	    </div>
+		<div class="row">
+			<div class="large-4 columns">
+				<input name="last_name" type="text" placeholder="Last name"
+					{{#if currentUser.profile.last_name}}
+						value="{{currentUser.profile.last_name}}"
+					{{/if}}>
+				{{#if errors.last_name}}
+					<small class="error">{{errors.last_name}}</small>
+				{{/if}}
+			</div>
+	    </div>
+	    <div class="row">
+			<div class="large-4 columns">
+				<input name="username" type="text" placeholder="Email or username"
+					{{#if currentUser.username}}
+						value="{{currentUser.username}}"
+					{{/if}}>
+				{{#if errors.username}}
+					<small class="error">{{errors.username}}</small>
+				{{/if}}
+			</div>
+	    </div>
+		<div class="row">
+			<div class="large-4 columns">
+				<input name="old_password" type="password" placeholder="Old Password">
+				{{#if errors.old_password}}
+					<small class="error">{{errors.old_password}}</small>
+				{{/if}}
+			</div>
+	    </div>
+		<div class="row">
+			<div class="large-4 columns">
+				<input name="new_password" type="password" placeholder="New password">
+				{{#if errors.new_password}}
+					<small class="error">{{errors.new_password}}</small>
+				{{/if}}
+			</div>
+	    </div>
+		<div class="row">
+			<div class="large-4 columns">
+				<input name="school_name" type="text" placeholder="School name"
+					{{#if currentUser.profile.school_name}}
+						value="{{currentUser.profile.school_name}}"
+					{{/if}}>
+				{{#if errors.school_name}}
+					<small class="error">{{errors.school_name}}</small>
+				{{/if}}
+			</div>
+	    </div>
+		<div class="row">
+			<div class="large-4 columns">
+				<input name="state" type="text" placeholder="State"
+					{{#if currentUser.profile.state}}
+						value="{{currentUser.profile.state}}"
+					{{/if}}>
+				{{#if errors.state}}
+					<small class="error">{{errors.state}}</small>
+				{{/if}}
+			</div>
+	    </div>
+		<div class="row">
+			<div class="large-4 columns">
+				<input name="city" type="text" placeholder="City"
+					{{#if currentUser.profile.city}}
+						value="{{currentUser.profile.city}}"
+					{{/if}}>
+				{{#if errors.city}}
+					<small class="error">{{errors.city}}</small>
+				{{/if}}
+			</div>
+	    </div>
+		<button class="green" type="submit">Save</button>
+	</form>
+</template>
+
+<template name="students_list">
+	<h2>List of students</h2>
+	<table>
+		<thead>
+			<tr>
+				<th>First name</th>
+				<th>Last name</th>
+				<th>Classrooms</th>
+				<th>Nickname</th>
+				<th>Logs</th>
+			</tr>
+		</thead>
+		<tbody>
+			{{#each students}}
+	            <tr>
+					<td>{{profile.first_name}}</td>
+					<td>{{profile.last_name}}</td>
+					<td>Classrooms</td>
+					<td>{{username}}</td>
+		            <td><a>Logs</a></td>
+				</tr>
+	        {{/each}}
+		</tbody>
+	</table>
+</template>

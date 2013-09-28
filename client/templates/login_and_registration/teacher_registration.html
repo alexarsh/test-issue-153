@@ -1,0 +1,71 @@
+<template name="teacher_register">
+	<div class="home">
+		<div class="container">
+			<div class="right-container">
+				<form name="teacher-register-form" class="teacher-register-form" method="POST">
+					<div class="row">
+						<div class="large-12 columns">
+							{{#if errors.register}}
+								<small class="error">{{errors.register}}</small>
+							{{/if}}
+						</div>
+					</div>
+					<div class="row">
+						<div class="large-4 columns">
+							<select class="name_prefix" name="name_prefix">
+								<option value="mrs" selected>Mrs.</option>
+								<option value="ms">Ms.</option>
+								<option value="mr">Mr.</option>
+							</select>
+						</div>
+					</div>
+					<div class="row">
+						<div class="large-12 columns">
+							<input name="first_name" type="text" placeholder="First name">
+							{{#if errors.first_name}}
+								<small class="error">{{errors.first_name}}</small>
+							{{/if}}
+						</div>
+				    </div>
+					<div class="row">
+						<div class="large-12 columns">
+							<input name="last_name" type="text" placeholder="Last name">
+							{{#if errors.last_name}}
+								<small class="error">{{errors.last_name}}</small>
+							{{/if}}
+						</div>
+				    </div>
+				    <div class="row">
+						<div class="large-12 columns">
+							<input name="username" type="text" placeholder="Email or username">
+							{{#if errors.username}}
+								<small class="error">{{errors.username}}</small>
+							{{/if}}
+						</div>
+				    </div>
+					<div class="row">
+						<div class="large-12 columns">
+							<input name="password" type="password" placeholder="Password">
+							{{#if errors.password}}
+								<small class="error">{{errors.password}}</small>
+							{{/if}}
+						</div>
+				    </div>
+					<div class="row">
+						<div class="large-12 columns">
+							<input name="teacher-policy" type="checkbox" id="teacher-policy">
+							<label for="teacher-policy">I agree with the terms of service and the privacy policy</label>
+							{{#if errors.teacher-policy}}
+								<small class="error">{{errors.teacher-policy}}</small>
+							{{/if}}
+						</div>
+				    </div>
+					<button class="red" type="submit">Register</button>
+					<div class="row already-registered">
+						Already registered? <a href="{{urlFor 'login'}}">Login</a>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</template>

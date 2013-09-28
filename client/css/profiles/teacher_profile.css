@@ -1,0 +1,52 @@
+/* line 2, ../../sass/partials/_colors.scss */
+.green {
+  background-color: #00b300;
+  border-color: #00b300;
+}
+/* line 5, ../../sass/partials/_colors.scss */
+.green:hover {
+  background-color: green;
+  border-color: green;
+}
+
+/* line 11, ../../sass/partials/_colors.scss */
+.red {
+  background-color: #ff6a33;
+  border-color: #ff6a33;
+}
+/* line 14, ../../sass/partials/_colors.scss */
+.red:hover {
+  background-color: orangered;
+  border-color: orangered;
+}
+
+/* line 3, ../../sass/profiles/teacher_profile.scss */
+.teacher_profile {
+  margin-top: 3%;
+  margin-left: 3%;
+}
+/* line 6, ../../sass/profiles/teacher_profile.scss */
+.teacher_profile section button > a {
+  color: #ffffff;
+}
+/* line 9, ../../sass/profiles/teacher_profile.scss */
+.teacher_profile .teacher_profile_update {
+  margin-bottom: 3%;
+}
+/* line 11, ../../sass/profiles/teacher_profile.scss */
+.teacher_profile .teacher_profile_update .row {
+  margin: 0;
+}
+/* line 13, ../../sass/profiles/teacher_profile.scss */
+.teacher_profile .teacher_profile_update .row .columns {
+  padding: 0;
+}
+/* line 15, ../../sass/profiles/teacher_profile.scss */
+.teacher_profile .teacher_profile_update .row .columns .name_prefix {
+  margin: 1rem 0;
+}
+
+/* line 23, ../../sass/profiles/teacher_profile.scss */
+.students_list {
+  height: 100%;
+}
